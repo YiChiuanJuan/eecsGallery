@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EECS Gallery</title>
+		<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/overlay_style.css">
+		<link rel="stylesheet" href="css/year_style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ham_btn_style.css">
+		<link rel="stylesheet" href="css/justifiedGallery.css" />
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexhei.css">
+	</head>
+	<body>
+		<div id="freshman_bg" class="bg">
+			<div id="overlay_bg" onclick="changeNav()"></div>
+			<div id="myNav" class="overlay">
+			  <div class="overlay-content">
+			    <a href="index.html">HOME</a>
+			    <a href="freshman.html">FRESHMAN</a>
+			    <a href="sophomore.html">SOPHOMORE</a>
+			    <a href="junior.html">JUNIOR</a>
+			    <a href="senior.html">SENIOR</a>
+			    <a href="else.html">ELSE</a>
+			  </div>
+			</div><!--overlay-->
+			<div id="ham_btn" onclick="changeNav()">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<a id="home_btn" href="index.html">
+				<img alt="home_btn" src="images/icon/home_icon.png"/>
+			</a>
+			<div class="pic_circle"></div>
+			<h1 class="title">FRESHMAN</h1>
+		</div><!--home_bg-->
+		<div class="event_list_arrow">
+			<img id="arrow_pic" onclick="changeNavTop()" src="images/icon/arrow_down.png" alt="arrow">
+			<div id="overlay_top_bg" onclick="changeNavTop()"></div>
+			<div id="myNav_top" class="overlay_top">
+			  <div class="overlay_top-content">
+			  	<h1> FRESHMAN </h1>
+			  </div>
+			</div><!--myNav_top-->
+		</div>
+
+		<div class="event" id="all_events">
+				
+		</div>
+		<a href="#freshman_bg" id="to-top">
+			<div class="to-top">TOP</div>
+		</div>
+
+		<br><br>
+			<a></a>
+		<br><br>
+
+		<footer>
+			<div>ALL COPYRIGHT RESERVED</div>
+		</footer>
+
+	</body>
+	<!-- import jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/ham_btn.js"></script>
+	<script src="js/jquery.justifiedGallery.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	<script src="js/year.js"></script>
+	<script>
+		pic_load("images/pictures/freshman/2013_03_29_group_meeting", 	"2013_03_29_group_meeting",		"2013 MAR. 29 團體面談");
+		pic_load("images/pictures/freshman/2013_08_18_english_camp", 	"2013_8_18_english_camp",		"2013 AUG. 18 英文營");
+		pic_load("images/pictures/freshman/2013_09_11_opening_ceremony","2013_09_11_opening_ceremony",	"2013 SEP. 11 始業式");
+		pic_load("images/pictures/freshman/2013_09_13_welcome_camp", 	"2013_09_13_welcome_camp",		"2013 SEP. 13 迎新");
+		pic_load("images/pictures/freshman/2013_10_07_making_cloth", 	"2013_10_07_making_cloth",		"2013 OCT. 07 做衣服");
+		pic_load("images/pictures/freshman/2013_10_14_Diane_bir", 		"2013_10_14_Diane_bir",			"2013 OCT. 14 蘆薈生日");
+		pic_load("images/pictures/freshman/2013_10_15_class_choosing", 	"2013_10_15_class_choosing",	"2013 OCT. 15 選課說明會");
+		pic_load("images/pictures/freshman/2013_11_15_go_singing", 		"2013_11_15_go_singing",		"2013 Nov. 15 唱歌");
+		pic_load("images/pictures/freshman/2013_11_16_GE_class", 		"2013_11_16_GE_class",			"2013 Nov. 16 公共藝術賞析");
+		pic_load("images/pictures/freshman/2013_11_25_winnie_bir", 		"2013_11_25_winnie_bir",		"2013 Nov. 25 彗庭生日");
+		pic_load("images/pictures/freshman/2013_12_06_three_bir", 		"2013_12_06_three_bir",			"2013 DEC. 06 好多人生日");
+		pic_load("images/pictures/freshman/2013_12_17_EE_night_pra", 	"2013_12_17_EE_night_pra",		"2013 DEC. 17 電機之夜練習");
+		pic_load("images/pictures/freshman/2014_01_01_BBQ", 			"2014_01_01_BBQ",				"2014 JAN. 20 系烤肉");
+		pic_load("images/pictures/freshman/2014_03_14_EE_night", 		"2014_03_14_EE_night",			"2014 MAR. 14 電機之夜");
+		pic_load("images/pictures/freshman/2014_04_14_Tainan_night", 	"2014_04_14_Tainan_night",		"2014 APR. 14 台南之夜");
+		pic_load("images/pictures/freshman/2014_05_29_bir", 			"2014_05_29_bir",				"2014 MAY. 29 跳湖");
+		pic_load("images/pictures/freshman/2014_06_04_farewell_party", 	"2014_06_04_farewell_party",	"2014 JUN. 04 送舊");
+		pic_load("images/pictures/freshman/2014_06_30_union", 			"2014_06_30_union",				"2014 JUN. 30 一起吃飯");
+		pic_load("images/pictures/freshman/2014_07_01_before_beijing", 	"2014_07_01_before_beijing",	"2014 JUL. 01 去北京前");
+		pic_load("images/pictures/freshman/2014_07_17_in_Beijing", 		"2014_07_17_in_Beijing",		"2014 JUL. 17 北京交流");
+	</script>
+</html>

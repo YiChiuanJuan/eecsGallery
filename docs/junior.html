@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EECS Gallery</title>
+		<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/overlay_style.css">
+		<link rel="stylesheet" href="css/year_style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ham_btn_style.css">
+		<link rel="stylesheet" href="css/justifiedGallery.css" />
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexhei.css">
+	</head>
+	<body>
+		<div id="junior_bg" class="bg">
+			<div id="overlay_bg" onclick="changeNav()"></div>
+			<div id="myNav" class="overlay">
+			  <div class="overlay-content">
+			    <a href="index.html">HOME</a>
+			    <a href="freshman.html">FRESHMAN</a>
+			    <a href="sophomore.html">SOPHOMORE</a>
+			    <a href="junior.html">JUNIOR</a>
+			    <a href="senior.html">SENIOR</a>
+			    <a href="else.html">ELSE</a>
+			  </div>
+			</div><!--overlay-->
+			<div id="ham_btn" onclick="changeNav()">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<a id="home_btn" href="index.html">
+				<img alt="home_btn" src="images/icon/home_icon.png"/>
+			</a>
+			<div class="pic_circle"></div>
+			<h1 class="title">Junior</h1>
+		</div><!--home_bg-->
+		<div class="event_list_arrow">
+			<img id="arrow_pic" onclick="changeNavTop()" src="images/icon/arrow_down.png" alt="arrow">
+			<div id="overlay_top_bg" onclick="changeNavTop()"></div>
+			<div id="myNav_top" class="overlay_top">
+			  <div class="overlay_top-content">
+			  	<h1> JUNIOR </h1>
+			  </div>
+			</div><!--myNav_top-->
+		</div>
+
+
+		<div class="event" id="all_events">
+				
+		</div>
+		<a href="#junior_bg" id="#to-top">
+			<div class="to-top">TOP</div>
+		</div>
+
+		<br><br>
+			<a></a>
+		<br><br>
+
+		<footer>
+			<div>ALL COPYRIGHT RESERVED</div>
+		</footer>
+
+	</body>
+	<!-- import jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/ham_btn.js"></script>
+	<script src="js/jquery.justifiedGallery.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	<script src="js/year.js"></script>
+	<script>
+		pic_load("images/pictures/junior/2015_09_14_intern", 	"2015_09_14_intern",		"2015 SEP. 14 企業實習分享");
+		pic_load("images/pictures/junior/2015_09_18_pizza_party", 	"2015_09_18_pizza_party",		"2015 SEP. 18 PIZZA PA");
+		pic_load("images/pictures/junior/2015_09_20_welcome_party","2015_09_20_welcome_party",	"2015 SEP. 20 迎新");
+		pic_load("images/pictures/junior/2015_10_14_Diane_bir", 	"2015_10_14_Diane_bir",		"2015 OCT. 14 蘆薈生日");
+		pic_load("images/pictures/junior/2015_11_18_ne_one", 	"2015_11_18_ne_one",		"2015 NOV. 18 內灣玩");
+		pic_load("images/pictures/junior/2015_11_24_class_choosing", 	"2015_11_24_class_choosing","2015 NOV. 24 選課說明會");
+		pic_load("images/pictures/junior/2016_01_13_DSP", 	"2016_01_13_DSP",	"2016 JAN. 13 數位系統設計");
+		pic_load("images/pictures/junior/2016_03_04_cherry_Blossom", 	"2016_03_04_cherry_Blossom",	"2016 MAR. 04 看櫻花");
+		pic_load("images/pictures/junior/2016_03_19_star", 	"2016_03_19_star",	"2016 MAR. 19 繁星座談");
+		pic_load("images/pictures/junior/2016_04_02_EECS_play", 	"2016_04_02_EECS_play",	"2016 APR. 02 電資班系遊");
+		pic_load("images/pictures/junior/2016_04_07_group_meeting", 	"2016_04_07_group_meeting",	"2016 APR. 07 團體面談");
+		pic_load("images/pictures/junior/2016_04_22_play", 	"2016_04_22_play",	"2016 APR. 22 玩耍");
+		pic_load("images/pictures/junior/2016_04_28", 	"2016_04_28",	"2016 APR. 18 紫荊季");
+		pic_load("images/pictures/junior/2016_05_20_BBQ", 	"2016_05_20_BBQ",	"2016 MAY. 20 烤肉大會");
+		pic_load("images/pictures/junior/2016_05_30_farewell_party", 	"2016_05_30_farewell_party",	"2016 MAY. 30 送舊");
+		pic_load("images/pictures/junior/2016_06_20_dinner", 	"2016_06_20_dinner",	"2016 JUN. 20 和淑雯姐吃晚餐");
+		pic_load("images/pictures/junior/2016_06_22_concert", 	"2016_06_22_concert",	"2016 JUN. 22 聽李成聿表演");
+		pic_load("images/pictures/junior/2016_06_29_singing", 	"2016_06_29_singing",	"2016 JUN. 29 唱歌");
+		pic_load("images/pictures/junior/2016_06_29_game_party", 	"2016_06_29_game_party",	"2016 JUN. 29 跑跑PA");
+	</script>
+</html>

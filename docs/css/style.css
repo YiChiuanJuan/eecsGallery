@@ -1,0 +1,259 @@
+body{
+  margin:0;
+  padding:0;
+  position: relative;
+  min-height:100vh;
+  background: white;
+  background-color: white;
+  font-family: 'cwTeXHei', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  height: 20px;
+  width: 100%;
+} 
+
+h1{
+  text-align: center;
+}
+
+
+#home_btn{
+  position: relative;
+  z-index: 100000;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 50px;
+}
+
+#home_btn.sticky{
+  position: fixed;
+  right:-10px;
+  top:-45px;
+}
+
+#home_btn img{
+  z-index: 100000;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+#home_btn.sticky img{
+  width:30px;
+  height:30px;
+}
+
+
+.bg{
+    height:80vh;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    -moz-background-size: cover;
+    background-size: cover;
+    animation: imagebulger 100s infinite;
+}
+#home_bg{
+    background: #000 url(../images/bg/main_page_bg.jpg) bottom center  fixed no-repeat;
+}
+
+#freshman_bg{
+    background: #000 url(../images/bg/freshman_bg.jpg) bottom center  fixed no-repeat;
+}
+
+#sophomore_bg{
+    background: #000 url(../images/bg/sophomore_bg.jpg) bottom center  fixed no-repeat;
+}
+
+#junior_bg{
+    background: #000 url(../images/bg/junior_bg.jpg) bottom center  fixed no-repeat;
+}
+
+#senior_bg{
+    background: #000 url(../images/bg/senior_bg.jpg) bottom center  fixed no-repeat;
+}
+
+#else_bg{
+    background: #000 url(../images/bg/else_bg.jpg) bottom center  fixed no-repeat;
+}
+@keyframes imagebulger {
+  0%, 100% {
+    background-size:auto 110%;
+    -webkit-background-size:auto 110%;
+    -moz-background-size:auto 110%;
+    -webkit-background-size:auto 110%;
+    -o-background-size:auto 110%;
+  }
+  50% {
+    background-size:auto 150%;
+    -moz-background-size:auto 150%;
+    -webkit-background-size:auto 150%;
+    -o-background-size:auto 150%;
+  }
+}
+
+
+.pic_circle{
+  position: relative;
+  height:250px;
+  width:250px;
+  border-radius:50%;
+  background-color: white;
+  opacity: 0.7;
+  margin:150px auto;
+}
+.nav_dec{
+  position: relative;
+  width:250px;
+  height:2px;
+  top:-15px;
+  background-color: #797B7D;
+}
+
+#eecs_logo{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin:25px;
+}
+
+.page_link_wrap{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.page_link{
+  display: inline-block;
+  margin: 20px 15px;
+  color:#95989A;
+  -webkit-transition: 0.1s linear;
+  -webkit-transition-property: -webkit-transform margin;
+}
+
+.page_link:hover{
+  margin: 20px 40px;
+  text-decoration: none;
+  color:#AEB1B3;
+  -webkit-transform: scale(1.2);
+}
+
+.to-top{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  opacity: 0;
+  border-radius: 25px;
+  right: 50px;
+  bottom: 50px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding-top:16px;
+  -webkit-transition: 0.5s linear;
+  font-size: 18px;
+}
+
+.styled input[type="file"] {
+display: none;
+}
+
+.styled input[type="file"] + label { 
+background: url('../images/icon/Add.png') no-repeat;
+}
+
+#fileToUpload{
+  background-image: url(../images/icon/Add.png);
+}
+
+/*For Ipad*/
+@media screen and (max-width:800px){
+  #home_btn {
+    margin:25px;
+  }
+  .page_link_wrap{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+  }
+  #home_btn.sticky{
+    position: fixed;
+    right:0px;
+    top:-15px;
+  }
+
+}
+
+/*for mobile phone*/
+@media screen and (max-width:500px){
+  #home_btn {
+    margin:15px;
+  }
+
+  .pic_circle{
+    position: relative;
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    background-color: white;
+    opacity: 0.7;
+    margin:100px auto;
+  }
+  #home_btn.sticky{
+    position: fixed;
+    right:-10px;
+    top:-8px;
+  }
+
+  #eecs_logo{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin:25px;
+  }
+  .page_link_wrap{
+    font-size: 3em;
+    padding-bottom: 20px;
+  }
+  .page_link{
+    margin:20px 35px;
+  }
+
+  .bg{
+    animation: imagebulger_mobile;
+  }
+
+  @keyframes imagebulger_mobile {
+    0%, 100% {
+      background-size:auto 50%;
+      -webkit-background-size:auto 50%;
+      -moz-background-size:auto 50%;
+      -webkit-background-size:auto 50%;
+      -o-background-size:auto 50%;
+    }
+    50% {
+      background-size:auto 100%;
+      -moz-background-size:auto 100%;
+      -webkit-background-size:auto 100%;
+      -o-background-size:auto 100%;
+    }
+  }
+
+  .to-top{
+    right: 20px;
+    bottom: 20px;
+  }
+}

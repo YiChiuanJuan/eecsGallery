@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EECS Gallery</title>
+		<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/overlay_style.css">
+		<link rel="stylesheet" href="css/year_style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ham_btn_style.css">
+		<link rel="stylesheet" href="css/justifiedGallery.css" />
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexhei.css">
+	</head>
+	<body>
+		<div id="sophomore_bg" class="bg">
+			<div id="overlay_bg" onclick="changeNav()"></div>
+			<div id="myNav" class="overlay">
+			  <div class="overlay-content">
+			    <a href="index.html">HOME</a>
+			    <a href="freshman.html">FRESHMAN</a>
+			    <a href="sophomore.html">SOPHOMORE</a>
+			    <a href="junior.html">JUNIOR</a>
+			    <a href="senior.html">SENIOR</a>
+			    <a href="else.html">ELSE</a>
+			  </div>
+			</div><!--overlay-->
+			<div id="ham_btn" onclick="changeNav()">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<a id="home_btn" href="index.html">
+				<img alt="home_btn" src="images/icon/home_icon.png"/>
+			</a>
+			<div class="pic_circle"></div>
+			<h1 class="title">Sophomore</h1>
+		</div><!--home_bg-->
+		<div class="event_list_arrow">
+			<img id="arrow_pic" onclick="changeNavTop()" src="images/icon/arrow_down.png" alt="arrow">
+			<div id="overlay_top_bg" onclick="changeNavTop()"></div>
+			<div id="myNav_top" class="overlay_top">
+			  <div class="overlay_top-content">
+			  	<h1> SOPHEMORE </h1>
+			  </div>
+			</div><!--myNav_top-->
+		</div>
+
+
+		<div class="event" id="all_events">
+				
+		</div>
+		<a href="#sophomore_bg" id="to-top">
+			<div class="to-top">TOP</div>
+		</div>
+
+		<br><br>
+			<a></a>
+		<br><br>
+
+		<footer>
+			<div>ALL COPYRIGHT RESERVED</div>
+		</footer>
+
+	</body>
+	<!-- import jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/ham_btn.js"></script>
+	<script src="js/jquery.justifiedGallery.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	<script src="js/year.js"></script>
+	<script>
+		pic_load("images/pictures/sophomore/2014_09_21_welcome_camp", 	"2014_09_21_welcome_camp",	"2014 SEP. 21 迎新");
+		pic_load("images/pictures/sophomore/2014_10_15_Diane_bir", 		"2014_10_15_Diane_bir",		"2014 OCT. 15 蘆薈生日");
+		pic_load("images/pictures/sophomore/2014_10_19_welcome_camp",	"2014_10_19_welcome_camp",	"2014 OCT. 19 迎新宿營");
+		pic_load("images/pictures/sophomore/2014_10_21_A_Ju_Bir", 		"2014_10_21_A_Ju_Bir",		"2014 OCT. 20 朱哲緯生日");
+		pic_load("images/pictures/sophomore/2014_11_19_sport", 			"2014_11_19_sport",			"2014 NOV. 19 運動會");
+		pic_load("images/pictures/sophomore/2014_12_21_dance_club", 	"2014_12_21_dance_club",	"2014 DEC. 21 熱舞社");
+		pic_load("images/pictures/sophomore/2014_12_24_hot_pot", 		"2014_12_24_hot_pot",		"2014 DEC. 24 去吃羊肉爐");
+		pic_load("images/pictures/sophomore/2014_12_25_four_bir", 		"2014_12_25_four_bir",		"2014 DEC. 25 好多人生日");
+		pic_load("images/pictures/sophomore/2014_12_29_hot_pot", 		"2014_12_29_hot_pot",		"2014 DEC. 24 火鍋大會");
+		pic_load("images/pictures/sophomore/2014_12_31_hot_pot", 		"2014_12_31_hot_pot",		"2014 DEC. 24 自己煮火鍋");
+		pic_load("images/pictures/sophomore/2015_01_01_Taichung", 		"2015_01_01_Taichung",		"2011 JAN. 01 跨年台中玩");
+		pic_load("images/pictures/sophomore/2015_03_09_exhange_share", 	"2015_03_09_exhange_share",	"2015 MAR. 09 明大分享會");
+		pic_load("images/pictures/sophomore/2015_04_10_group_meeting", 	"2015_04_10_group_meeting",	"2015 APR. 10 團體面談");
+		pic_load("images/pictures/sophomore/2015_04_17_BBQ", 			"2015_04_17_BBQ",			"2015 APR. 17 烤肉大會");
+		pic_load("images/pictures/sophomore/2015_06_02_farewell_party", "2015_06_02_farewell_party","2015 JUN. 02 送舊");
+	</script>
+</html>

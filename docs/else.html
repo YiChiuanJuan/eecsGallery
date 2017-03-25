@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EECS Gallery</title>
+		<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/overlay_style.css">
+		<link rel="stylesheet" href="css/year_style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ham_btn_style.css">
+		<link rel="stylesheet" href="css/justifiedGallery.css" />
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexhei.css">
+	</head>
+	<body>
+		<div id="else_bg" class="bg">
+			<div id="overlay_bg" onclick="changeNav()"></div>
+			<div id="myNav" class="overlay">
+			  <div class="overlay-content">
+			    <a href="index.html">HOME</a>
+			    <a href="freshman.html">FRESHMAN</a>
+			    <a href="sophomore.html">SOPHOMORE</a>
+			    <a href="junior.html">JUNIOR</a>
+			    <a href="senior.html">SENIOR</a>
+			    <a href="else.html">ELSE</a>
+			  </div>
+			</div><!--overlay-->
+			<div id="ham_btn" onclick="changeNav()">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<a id="home_btn" href="index.html">
+				<img alt="home_btn" src="images/icon/home_icon.png"/>
+			</a>
+			<div class="pic_circle"></div>
+			<h1 class="title">Else</h1>
+		</div><!--home_bg-->
+		<div class="event_list_arrow">
+			<img id="arrow_pic" onclick="changeNavTop()" src="images/icon/arrow_down.png" alt="arrow">
+			<div id="overlay_top_bg" onclick="changeNavTop()"></div>
+			<div id="myNav_top" class="overlay_top">
+			  <div class="overlay_top-content">
+			  	<h1> ELSE </h1>
+			  </div>
+			</div><!--myNav_top-->
+		</div>
+
+		<div class="page_link_wrap">
+			<a class="page_link" href="freshman.html">FRESHMAN</a>
+			<a class="page_link" href="sophomore.html">SOPHOMORE</a>
+			<a class="page_link" href="junior.html">JUNIOR</a>
+			<a class="page_link" href="senior.html">SENIOR</a>
+			<a class="page_link" href="else.html">ELSE</a>
+		</div><!--page_link_wrap-->
+
+		<h1>ＣＯＭＩＮＧ　ＳＯＯＮ　！！</h1>
+
+		<div class="event" id="all_events">
+				
+		</div>
+		<a href="#else_bg" id="to-top">
+			<div class="to-top">TOP</div>
+		</div>
+
+		<br><br>
+			<a></a>
+		<br><br>
+
+		<footer>
+			<div>ALL COPYRIGHT RESERVED</div>
+		</footer>
+
+	</body>
+	<!-- import jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/ham_btn.js"></script>
+	<script src="js/jquery.justifiedGallery.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	<script src="js/year.js"></script>
+	<script>
+	</script>
+</html>

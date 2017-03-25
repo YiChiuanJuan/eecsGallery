@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EECS Gallery</title>
+		<link rel="shortcut icon" type="image/png" href="images/icon/favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/overlay_style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/ham_btn_style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Galdeano">
+		<!-- import jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/ham_btn.js"></script>
+	</head>
+	<body>
+		<div id="home_bg" class="bg">
+			<div id="overlay_bg" onclick="changeNav()"></div>
+			<div id="myNav" class="overlay">
+			  <div class="overlay-content">
+			    <a href="index.html">HOME</a>
+			    <a href="freshman.html">FRESHMAN</a>
+			    <a href="sophomore.html">SOPHOMORE</a>
+			    <a href="junior.html">JUNIOR</a>
+			    <a href="senior.html">SENIOR</a>
+			    <a href="else.html">ELSE</a>
+			  </div>
+			</div><!--overlay-->
+			<div id="ham_btn" onclick="changeNav()">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<a id="home_btn" href="index.html"><img alt="home_btn" src="images/icon/home_icon.png"/></a>
+			<div class="pic_circle">
+				<img id="eecs_logo" alt="profile" src="images/icon/logo_s.png"/>
+			</div>
+		</div><!--home_bg-->
+		<div class="page_link_wrap">
+			<a class="page_link" href="freshman.html">FRESHMAN</a>
+			<a class="page_link" href="sophomore.html">SOPHOMORE</a>
+			<a class="page_link" href="junior.html">JUNIOR</a>
+			<a class="page_link" href="senior.html">SENIOR</a>
+			<a class="page_link" href="else.html">ELSE</a>
+		</div><!--page_link_wrap-->
+
+<!--
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+-->
+
+		<footer>
+			<div>ALL COPYRIGHT RESERVED</div>
+		</footer>
+	</body>
+</html>
